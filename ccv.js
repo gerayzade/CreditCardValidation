@@ -5,6 +5,11 @@ function checkDigits(cardNumber, objCard) {
     var countL, countP, prefixLength, rightmost, digit, i, doubled, sum = 0;
     var cardLength = cardNumber.length;
     
+    if (!cardNumber.match(/^[0-9]+$/)) {
+        error = "card number should contain only digits"
+        return false;
+    }
+	
     // Check if the prefix of the card number corresponds to its type
     
     error = "prefix should be in {";
