@@ -1,7 +1,7 @@
 function checkDigits(cardNumber, objCard) {
     cardNumber.replace(/[^0-9]+/g,'');
-    var error = "";
     var prefixString = "";
+    var error = "";
     var countL, countP, prefixLength, rightmost, digit, i, doubled, sum = 0;
     var cardLength = cardNumber.length;
     
@@ -9,10 +9,10 @@ function checkDigits(cardNumber, objCard) {
         error = "card number should contain only digits"
         return false;
     }
-	
+    
     // Check if the prefix of the card number corresponds to its type
     
-    error = "prefix should be in {";
+    error = "IIN must start with {";
     
     for (i = 0; i < objCard.prefix.length; i++) {
         prefixLength = objCard.prefix[i].length;
@@ -50,7 +50,7 @@ function checkDigits(cardNumber, objCard) {
     
     // Check if the length of the card number corresponds to its type
     
-    error = "length should be in {";
+    error = "length must be in {";
     
     for (i = 0; i < objCard.validLength.length; i++) {
         if (objCard.validLength[i].match(/-/)) {
@@ -95,7 +95,7 @@ function checkDigits(cardNumber, objCard) {
         sum += doubled;
     }
     
-    error = "according to the Luhn Algorithm";
+    error = "checksum is incorrect";
     
     if (!sum) { 
         return false; 
