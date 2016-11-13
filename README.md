@@ -1,5 +1,5 @@
 # CreditCardValidation
-This script is designed to validate credit card number by checking its IIN prefix and checksum. Following credit card brands are supported:
+This script is designed to validate credit card number by checking its IIN prefix, length and checksum. Following credit card brands are supported:
 <ul>
 <li>American Express</li>
 <li>Discover Card</li>
