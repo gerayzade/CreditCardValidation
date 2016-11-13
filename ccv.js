@@ -1,5 +1,5 @@
 function checkDigits(cardNumber, objCard) {
-	cardNumber.replace(/[^0-9]+/g,'');
+    cardNumber.replace(/[^0-9]+/g,'');
     var error = "";
     var prefixString = "";
     var countL, countP, prefixLength, rightmost, digit, i, doubled, sum = 0;
