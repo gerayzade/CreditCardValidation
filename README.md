@@ -11,4 +11,4 @@ This script is designed to validate credit card number by checking its IIN prefi
 </ul>
 <img width="500px" src="interface.png" />
 <br/><br/>
-View on <a href="http://www.gerayzade.me/dev/ccv/" target="_blank">gerayzade.me</a>
+View on <a href="http://www.gerayzade.az/dev/ccv/" target="_blank">gerayzade.az</a>
